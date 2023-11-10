@@ -11,9 +11,7 @@ on:
 #Use a matrix strategy to use Node.js versions 16.x and 18.x
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: ['16.x', '18.x']
@@ -25,14 +23,14 @@ jobs:
       - name: Set up Node.js 
         uses: actions/setup-node@v3
       # Install the dependencies.
-      - run: 
+      # - run: 
 
       # Run the tests.
       - run: 
         using: 'node18'
         main: 'backend/test.js'
       # Run the linter.
-      - run: 
+      # - run: 
 
       # Send a console message at completion.
       - run: |
