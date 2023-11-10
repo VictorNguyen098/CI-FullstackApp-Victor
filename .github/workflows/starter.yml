@@ -25,9 +25,8 @@ jobs:
       # Install the dependencies.
       # - run: 
       # Run the tests.
-      - run: 
-        using: 'node18'
-        main: backend/test.js
+      - name: test
+        run: backend/test.js
       # Run the linter.
       # - run: 
 
