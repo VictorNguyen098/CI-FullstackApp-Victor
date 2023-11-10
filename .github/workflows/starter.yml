@@ -29,13 +29,13 @@ jobs:
       # Run the tests.
       # Install the dependencies.
       - name: dependencies
-      - run: cd backend && npm ci
+        run: cd backend && npm ci
 
       - name: test
         run: cd backend && npm test
       # Run the linter.
       - name: linter
-      - run: cd backend && npm run lint
+        run: cd backend && npm run lint
 
       # Send a console message at completion.
       - run: |
