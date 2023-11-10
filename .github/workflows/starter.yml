@@ -24,11 +24,10 @@ jobs:
         uses: actions/setup-node@v3
       # Install the dependencies.
       # - run: 
-
       # Run the tests.
       - run: 
         using: 'node18'
-        main: 'backend/test.js'
+        main: backend/test.js
       # Run the linter.
       # - run: 
 
