@@ -22,11 +22,13 @@ jobs:
       # Set up a Node.js environment using the specified node version.
       - name: Set up Node.js 
         uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
       # Install the dependencies.
       # - run: 
       # Run the tests.
       - name: test
-        run: backend/test.js
+        run: cd backend && npm test.js
       # Run the linter.
       # - run: 
 
